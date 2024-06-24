@@ -38,7 +38,7 @@ class TrackingCodeTags extends Tags
 
         $output = '<!-- tracking code manager '.$tag.' scripts -->';
         foreach($scripts as $script){
-            $output .= $script;
+            $output .= $script['code'];
         }
         $output .= '<!-- end tracking code manager '.$tag.' scripts -->';
         return $output;
